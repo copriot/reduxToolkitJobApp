@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import jobSlice from "./jobSlice";
+import job from "./jobSlice";
 
 
 
-export default configureStore({ reducer: jobSlice })
+export default configureStore({ reducer: { job } })

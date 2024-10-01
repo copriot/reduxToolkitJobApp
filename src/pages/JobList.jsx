@@ -1,12 +1,8 @@
 import React, { useEffect } from "react";
 import api from "../utilities/api.js";
+import { useSelector } from "react-redux";
 const JobList = () => {
-  useEffect(() => {
-    api
-      .get("/jobs")
-      .then((res) => console.log(res.data))
-      .catch((err) => console.log(err.message));
-  }, []);
+  const { isLoading, error, jobs } = useSelector((store) => store.jobs);
 
   return <div>JobList</div>;
 };
