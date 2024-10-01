@@ -12,3 +12,22 @@ body {
   min-height: 100vh;
   font-family: "poppins";
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  margin: 25px;
+
+  nav {
+    display: flex;
+    gap: 20px;
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #f52789;
+    }
+    .active {
+      text-shadow: 0 0 15px whitesmoke;
+    }
+  }
+}
