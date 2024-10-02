@@ -9,20 +9,24 @@ import api from "./utilities/api";
 const App = () => {
   const dispatch = useDispatch();
 
-  useEffect(() => {
+  const getData = () => {
     dispatch(setLoading());
 
     api
       .get("/jobs")
-      .then((response) => console.log(response.data))
-      .catch((err) => console.log(err.message));
-  });
+      .then((res) => dispatch(setJobs(res.data)))
+      .catch((err) => dispatch(setError(err.message)));
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<JobList />} />
+        <Route path="/" element={<JobList retry={getData} />} />
         <Route path="/add" element={<AddJob />} />
       </Routes>
     </BrowserRouter>

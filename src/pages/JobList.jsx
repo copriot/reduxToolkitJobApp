@@ -1,10 +1,24 @@
-import React, { useEffect } from "react";
-import api from "../utilities/api.js";
 import { useSelector } from "react-redux";
-const JobList = () => {
-  const { isLoading, error, jobs } = useSelector((store) => store.jobs);
+import Loader from "../Components/Loader.jsx";
+import Error from "../Components/Error.jsx";
+const JobList = ({ retry }) => {
+  const { isLoading, error, jobs } = useSelector((store) => store.job);
 
-  return <div>JobList</div>;
+  return (
+    <div className="list-page">
+      {isLoading ? (
+        <Loader />
+      ) : error ? (
+        <Error msg={error} retry={retry} />
+      ) : (
+        <div>
+          {jobs.map((i, index) => (
+            <div key={index}>merhabalar</div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default JobList;
