@@ -19,15 +19,6 @@
       "date": 1712607002328
     },
     {
-      "position": "Marketing Manager",
-      "company": "Microsoft",
-      "location": "Seattle",
-      "status": "Reddedildi",
-      "type": "Yarı Zamanlı",
-      "id": "d7c4d757-4957-488d-a7f2-f8db05aa2c46",
-      "date": 1318607013502
-    },
-    {
       "position": "Data Scientist",
       "company": "Microsoft",
       "location": "Menlo Park",
@@ -116,6 +107,15 @@
       "type": "Tam Zamanlı",
       "id": "454bad57-25e8-4388-8343-c79a4b18241e",
       "date": 1727991729684
+    },
+    {
+      "position": "Frontend Developer",
+      "company": "Udemig",
+      "location": "İstanbul",
+      "status": "Devam Ediyor",
+      "type": "Tam Zamanlı",
+      "id": "33e01fd2-dca3-4ba4-9398-74cb75572524",
+      "date": 1727996119351
     }
   ]
 }
