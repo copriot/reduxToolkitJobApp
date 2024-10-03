@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 
 const AutoInput = ({ label, name }) => {
   const { jobs } = useSelector((store) => store.job);
-  console.log(jobs);
 
   //pozisyon değerlerinden olusan dizi dön
   const array = jobs.map((job) => job[name]);

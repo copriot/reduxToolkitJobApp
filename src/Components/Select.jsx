@@ -4,7 +4,7 @@ const Select = ({ label, options, name }) => {
   return (
     <div>
       <label htmlFor="name">{label}</label>
-      <select id={name}>
+      <select id={name} name={name}>
         <option value="" hidden>
           Seçiniz
         </option>

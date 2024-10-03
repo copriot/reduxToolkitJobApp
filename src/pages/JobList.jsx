@@ -13,8 +13,8 @@ const JobList = ({ retry }) => {
         <Error msg={error} retry={retry} />
       ) : (
         <div className="cards-wrapper">
-          {jobs.map((i) => (
-            <Card key={i.date} job={i} />
+          {jobs.map((job) => (
+            <Card key={job.id} job={job} />
           ))}
         </div>
       )}
