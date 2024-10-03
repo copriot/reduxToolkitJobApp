@@ -7,13 +7,18 @@ import { toast } from "react-toastify";
 const DelButton = ({ id }) => {
   const dispatch = useDispatch();
   const handleClick = () => {
+    //kullanıcıya sor emindegilse durdur
+    if (!confirm("Silmek istediğinize eminmisiniz ?")) return;
+    //api silme isteği
     api
+
       .delete(`/jobs/${id}`)
-      .then(
-        (res) => dispatch(deleteJob(id)),
-        toast.warning("Başvuru kaldırıldı"),
-      )
-      .catch((err) => console.log(err.message));
+      //reducer ı güncelle
+      .then((res) => {
+        toast.warning("Başvuru kaldırıldı"), dispatch(deleteJob(id));
+      })
+      //hata mesajı fırlat
+      .catch((err) => toast.error("bir sorun oluştu"));
   };
 
   return (
