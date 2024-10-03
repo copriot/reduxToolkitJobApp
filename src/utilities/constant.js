@@ -8,3 +8,10 @@ export const typeOpt = [
     "Yarı Zamanlı",
     "Uzaktan Staj"
 ]
+
+export const sortOpt = [
+    "a-z",
+    "z-a",
+    "En Yeni",
+    "En Eski",
+]

@@ -6,8 +6,12 @@ import { statusOpt, typeOpt } from "../utilities/constant";
 import { v4 } from "uuid";
 import api from "../utilities/api";
 import { useNavigate } from "react-router-dom";
+import { createJob } from "../redux/slices/jobSlice";
+import { useDispatch } from "react-redux";
+import { toast } from "react-toastify";
 const AddJob = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -20,11 +24,20 @@ const AddJob = () => {
     newJob.id = v4();
     newJob.date = Date.now();
     //api'a yeni veriyi kaydet
-    api.post("/jobs");
+    api
+      .post("/jobs", newJob)
+      .then(() => {
+        dispatch(createJob(newJob));
+        toast.success("Yeni başvuru eklendi");
+        //anasayfaya yönlendir
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error("Bir sorun oluştu");
+      });
     // store'a kaydet
-
-    //anasayfaya yönlendir
-    navigate("/");
+    dispatch(createJob(newJob));
   };
   return (
     <div className="add-page">

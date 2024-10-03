@@ -2,12 +2,10 @@ import React from "react";
 
 const Button = ({ text }) => {
   return (
-    <>
-      <button>
-        {text}
-        <span></span>
-      </button>
-    </>
+    <button className="createbutton">
+      {text}
+      <span></span>
+    </button>
   );
 };
 

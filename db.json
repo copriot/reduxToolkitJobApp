@@ -89,6 +89,33 @@
       "type": "Tam Zamanlı",
       "id": "46b7da48-67af-45c6-9dfe-5d327d24cab8",
       "date": 1715104431342
+    },
+    {
+      "id": "fa77c9ae-042b-4ccf-b044-930d15aa05a5",
+      "position": "Frontend Developer",
+      "company": "IBM",
+      "location": "İzmir/Bayraklı",
+      "status": "Mülakat",
+      "type": "Tam Zamanlı",
+      "date": 1727979972867
+    },
+    {
+      "id": "4cee83ce-aba2-4001-8f2f-1fb7f8656afc",
+      "position": "Data Analyst",
+      "company": "Coca Cola",
+      "location": "Menlo Park",
+      "status": "Reddedildi",
+      "type": "Uzaktan Staj",
+      "date": 1727980652817
+    },
+    {
+      "id": "48c92de2-0e5b-49ad-9ea7-2339a4e05898",
+      "position": "Product Manager",
+      "company": "Coca Cola",
+      "location": "Redmond",
+      "status": "Devam Ediyor",
+      "type": "Yarı Zamanlı",
+      "date": 1727981451700
     }
   ]
 }
