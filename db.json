@@ -1,28 +1,13 @@
 {
   "jobs": [
     {
-      "position": "Marketing Manager",
-      "company": "Microsoft",
-      "location": "Menlo Park",
-      "type": "Tam Zamanlı",
-      "date": 121232,
-      "status": "reddedildi"
-    },
-    {
-      "position": "Sosyal Medya Uzmanı",
-      "company": "Google",
-      "location": "San Francisco",
-      "type": "Yarı Zamanlı",
-      "date": 123456,
-      "status": "başarıyla tamamlandı"
-    },
-    {
       "position": "Ürün Yönetimi Direktörü",
       "company": "Apple",
       "location": "Cupertino",
       "type": "Tam Zamanlı",
       "date": 123789,
-      "status": "beklemede"
+      "status": "beklemede",
+      "id": "ef2c"
     },
     {
       "position": "Grafik Tasarımcı",
@@ -30,23 +15,8 @@
       "location": "Los Angeles",
       "type": "Freelance",
       "date": 124321,
-      "status": "reddedildi"
-    },
-    {
-      "position": "Satış Temsilcisi",
-      "company": "Amazon",
-      "location": "Seattle",
-      "type": "Tam Zamanlı",
-      "date": 125432,
-      "status": "teklif edildi"
-    },
-    {
-      "position": "Veri Analisti",
-      "company": "Facebook",
-      "location": "Menlo Park",
-      "type": "Yarı Zamanlı",
-      "date": 126543,
-      "status": "onaylandı"
+      "status": "reddedildi",
+      "id": "6ac5"
     }
   ]
 }

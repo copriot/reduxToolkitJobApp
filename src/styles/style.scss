@@ -63,3 +63,61 @@ header {
     color: crimson;
   }
 }
+
+//CARD
+
+.cards-wrapper {
+  padding: 20px;
+  gap: 50px;
+  display: grid;
+}
+
+.card {
+  background-color: #71797e;
+  padding: 20px;
+  border-radius: 20px;
+  .head {
+    display: flex;
+    justify-content: space-between;
+  }
+  section:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+  .letter {
+    background-color: #f52789;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 30px;
+    text-shadow: 0 0 10px white;
+    font-family: "poppins";
+  }
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 10px;
+
+  .field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .status {
+    display: flex;
+
+    p {
+      padding: 6px;
+      border-radius: 10px;
+    }
+  }
+}

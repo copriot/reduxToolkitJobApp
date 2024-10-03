@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import Loader from "../Components/Loader.jsx";
 import Error from "../Components/Error.jsx";
+import Card from "../Components/Card.jsx";
 const JobList = ({ retry }) => {
   const { isLoading, error, jobs } = useSelector((store) => store.job);
 
@@ -11,9 +12,9 @@ const JobList = ({ retry }) => {
       ) : error ? (
         <Error msg={error} retry={retry} />
       ) : (
-        <div>
-          {jobs.map((i, index) => (
-            <div key={index}>merhabalar</div>
+        <div className="cards-wrapper">
+          {jobs.map((i) => (
+            <Card key={i.date} job={i} />
           ))}
         </div>
       )}
