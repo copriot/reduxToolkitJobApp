@@ -38,7 +38,7 @@ const Card = ({ job }) => {
           <p>{job.type}</p> <FaBagShopping />
         </div>
         <div className="field">
-          <p>{job.date}</p>
+          <p>{new Date(job.date).toLocaleDateString()}</p>
           <CiCalendarDate />
         </div>
         <div className="status">
